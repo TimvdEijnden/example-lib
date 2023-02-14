@@ -1,0 +1,13 @@
+{
+  "name": "example-lib",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "vue-demi": "^0.13.11"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.mjs"
+    }
+  }
+}
