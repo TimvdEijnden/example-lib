@@ -3,11 +3,26 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
+    "vue": "^3.2.0",
     "vue-demi": "^0.13.11"
   },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "vite": "^2.9.9"
+  },
   "exports": {
-    ".": {
-      "import": "./index.mjs"
+    "./src": {
+      "import": "./src/main.mjs"
+    },
+    "./dist": {
+      "import": "./dist/main.mjs"
     }
+  },
+  "files": [
+    "src/**",
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "vite build"
   }
 }
